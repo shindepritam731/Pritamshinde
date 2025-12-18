@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pritam Portfolio</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        background: #ffffff;
+    }
+
+    /* HEADER */
+    header {
+        width: 100%;
+        padding: 20px 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #0a3cff;
+        color: white;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    header h2 {
+        font-size: 24px;
+    }
+
+    nav a {
+        margin-left: 25px;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 10%;
+        flex-wrap: wrap;
+        background: #f5f9ff;
+    }
+
+    .hero-left {
+        flex: 1;
+        min-width: 280px;
+    }
+
+    .hero-left h1 {
+        font-size: 45px;
+        color: #0a3cff;
+    }
+
+    .hero-left h3 {
+        font-size: 22px;
+        margin-top: 10px;
+        color: #333;
+    }
+
+    .hero-left p {
+        margin-top: 20px;
+        color: #555;
+        max-width: 450px;
+    }
+
+    .hero-left button {
+        margin-top: 25px;
+        padding: 12px 28px;
+        border-radius: 30px;
+        border: none;
+        background: #0a3cff;
+        color: white;
+        cursor: pointer;
+        font-size: 17px;
+    }
+
+    .hero-right {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-right img {
+        width: 330px;
+        border-radius: 30% 70% 60% 40% / 40% 40% 60% 60%;
+    }
+
+    /* SERVICES SECTION */
+    .services {
+        padding: 70px 10%;
+        text-align: center;
+    }
+
+    .services h2 {
+        color: #0a3cff;
+        font-size: 32px;
+    }
+
+    .line {
+        width: 70px;
+        height: 4px;
+        background: #0a3cff;
+        margin: 20px auto 40px;
+        border-radius: 5px;
+    }
+
+    .service-boxes {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .box {
+        width: 32%;
+        min-width: 260px;
+        padding: 30px;
+        background: white;
+        border-radius: 18px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+        transition: 0.3s;
+    }
+
+    .box:hover {
+        transform: translateY(-8px);
+    }
+
+    .box-icon {
+        font-size: 40px;
+        color: #0a3cff;
+        margin-bottom: 20px;
+    }
+
+    /* FOOTER */
+    footer {
+        margin-top: 50px;
+        padding: 20px;
+        text-align: center;
+        background: #0a3cff;
+        color: white;
+    }
+
+    /* MOBILE RESPONSIVE */
+    @media (max-width: 900px) {
+        header nav {
+            display: none;
+        }
+
+        .hero {
+            text-align: center;
+        }
+
+        .hero-left h1 {
+            font-size: 36px;
+        }
+
+        .hero-right img {
+            width: 250px;
+            margin-top: 20px;
+        }
+
+        .service-boxes {
+            justify-content: center;
+        }
+
+        .box {
+            width: 90%;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h2>Pritam</h2>
+    <nav>
+        <a href="#hero">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO SECTION -->
+<section id="hero" class="hero">
+    <div class="hero-left">
+        <h1>Hello, I'm Pritam</h1>
+        <h3>Hiring & Employee Position Expert</h3>
+        <p>I help companies find the right talent through modern recruitment and hiring solutions.</p>
+        <button>Hire Me</button>
+    </div>
+
+    <div class="hero-right">
+        <img src="imageport.jpg" alt="Your Photo">
+    </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section id="services" class="services">
+    <h2>My Services</h2>
+    <div class="line"></div>
+
+    <div class="service-boxes">
+
+        <div class="box">
+            <div class="box-icon">👨‍💼</div>
+            <h3>HR & Hiring</h3>
+            <p>Professional hiring services to help companies onboard the best talent.</p>
+        </div>
+
+        <div class="box">
+            <div class="box-icon">💼</div>
+            <h3>Employee Management</h3>
+            <p>Smooth onboarding, employee handling, and management solutions.</p>
+        </div>
+
+        <div class="box">
+            <div class="box-icon">📊</div>
+            <h3>Branding & Consulting</h3>
+            <p>Guidance for company structure, branding, and workplace culture.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact">
+    © 2025 Pritam | All Rights Reserved
+</footer>
+
+</body>
+</html>
